@@ -1,0 +1,29 @@
+   <!--hairMenu-->
+    <div id="tabstrip-hair"         
+        data-role="view"         
+        data-title="Hair Menu"         
+        data-model="app.hairMenu.viewModel">
+
+        <div class="hairMenu">
+            <p class="hairMenu-title">Top Care Hair Menu</p>
+
+            <div class="separator">
+                <div class="dark"></div>
+                <div class="light"></div>
+            </div>
+
+            <ul data-role="listview"
+                data-bind="source: hairMenuDataSource"
+                data-template="hairMenu-template"
+                data-style="inset">
+            </ul>
+            
+        </div>
+    </div>
+
+
+
+    <!--hairMenu  template-->
+    <script id="hairMenu-template" type="text/x-kendo-template">
+		<a href="\#serviceItems-view?field=serviceID&operator=eq&value=#=serviceID#&title=#:encodeURIComponent(serviceName).replace("'", "%27")#">#=serviceName#</a>
+	</script>
