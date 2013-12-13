@@ -1,4 +1,20 @@
-   <!--Weather-->
+
+<!-- Nails --> 
+    <div id="nailServices-view"
+         data-role="view" 
+         data-title="Nails" 
+         data-model="app.nailServicesView.viewModel"  >
+    
+		<ul data-role="listview" data-bind="source: nailServices" data-template="nailServices-list-template" data-fixed-headers="true" data-style="inset"></ul>
+	</div>  
+
+ <!--Nails template-->
+    <script id="nailServices-list-template" type="text/x-kendo-template">
+		<a href="\serviceItems-view?field=serviceID&operator=eq&value=#=serviceID#&title=#:encodeURIComponent(serviceName).replace("'", "%27")#">#=serviceName#</a>
+	</script>
+
+<!--Weather-->
+<!--
     <div id="tabstrip-nails"
         data-role="view"
         data-title="Weather"
@@ -19,8 +35,9 @@
             </ul>
         </div>
     </div>
-
+-->
     <!--Weather forecast template-->
+<!--
     <script type="text/x-kendo-tmpl" id="weather-forecast-template">
         <div>
             <div class="position-left">
@@ -35,3 +52,4 @@
             </div>
         </div>
     </script>
+-->
