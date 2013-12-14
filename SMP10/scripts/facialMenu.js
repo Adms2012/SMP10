@@ -14,7 +14,7 @@
             dataSource = new kendo.data.DataSource({
                 transport: {
                     read: {
-                        url: "data/hairMenu.json",
+                        url: "data/facialMenu.json",
                         dataType: "json"
                     }
                 }

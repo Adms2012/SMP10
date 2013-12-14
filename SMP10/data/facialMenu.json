@@ -19,7 +19,7 @@
     "serviceID": 29,
     "serviceCategory": "Facial",
     "serviceName": "Eyelash Extension",
-    "serviceDescription": "Make up"
+    "serviceDescription": "Eyelash Extension"
     },
     {
     "userID": "TestUser",
@@ -33,20 +33,83 @@
     "serviceID": 31,
     "serviceCategory": "Facial",
     "serviceName": "Chip or upper lip",
-    "serviceDescription": "Make up"
+    "serviceDescription": "Chip or upper lip"
     },
     {
     "userID": "TestUser",
-    "serviceID": 30,
+    "serviceID": 32,
     "serviceCategory": "Facial",
     "serviceName": "Full face",
-    "serviceDescription": "Make up"
+    "serviceDescription": "Full face"
     },
     {
     "userID": "TestUser",
-    "serviceID": 31,
-    "serviceCategory": "Nails",
+    "serviceID": 33,
+    "serviceCategory": "Facial",
     "serviceName": "Underarms",
-    "serviceDescription": "Make up"
+    "serviceDescription": "Underarms"
     },
+    {
+    "userID": "TestUser",
+    "serviceID": 34,
+    "serviceCategory": "Facial",
+    "serviceName": "Bikini lines",
+    "serviceDescription": "Bikini lines"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 35,
+    "serviceCategory": "Facial",
+    "serviceName": "Full leg",
+    "serviceDescription": "Full leg"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 36,
+    "serviceCategory": "Facial",
+    "serviceName": "Half leg",
+    "serviceDescription": "Half leg"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 37,
+    "serviceCategory": "Facial",
+    "serviceName": "Full arm",
+    "serviceDescription": "Full arm"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 38,
+    "serviceCategory": "Facial",
+    "serviceName": "Half arm",
+    "serviceDescription": "Half arm"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 39,
+    "serviceCategory": "Facial",
+    "serviceName": "Eyebrows Soft-touch Perm. Make-up",
+    "serviceDescription": "Eyebrows Soft-touch Perm. Make-up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 40,
+    "serviceCategory": "Facial",
+    "serviceName": "Lipliner Soft-touch Perm. Make-up",
+    "serviceDescription": "Lipliner Soft-touch Perm. Make-up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 41,
+    "serviceCategory": "Facial",
+    "serviceName": "Eyeliner Soft-touch Perm. Make-up",
+    "serviceDescription": "Eyeliner Soft-touch Perm. Make-up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 42,
+    "serviceCategory": "Facial",
+    "serviceName": "Full-lips Soft-touch Perm. Make-up",
+    "serviceDescription": "Full-lips Soft-touch Perm. Make-up"
+    }
 ]
