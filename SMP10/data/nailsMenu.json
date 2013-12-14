@@ -1,0 +1,65 @@
+ [
+    {
+    "userID": "TestUser",
+    "serviceID": 17,
+    "serviceCategory": "Nails",
+    "serviceName": "Manicure",
+    "serviceDescription": "Manicure"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 18,
+    "serviceCategory": "Nails",
+    "serviceName": "Pedicure",
+    "serviceDescription": "Pedicure"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 19,
+    "serviceCategory": "Nails",
+    "serviceName": "Spa Pedicure",
+    "serviceDescription": "Spa Pedicure"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 20,
+    "serviceCategory": "Nails",
+    "serviceName": "Manicure & Pedicure",
+    "serviceDescription": "Manicure & Pedicure"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 21,
+    "serviceCategory": "Nails",
+    "serviceName": "Manicure & Spa Pedicure",
+    "serviceDescription": "Manicure & Spa Pedicure"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 22,
+    "serviceCategory": "Nails",
+    "serviceName": "White tip",
+    "serviceDescription": "White tip"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 23,
+    "serviceCategory": "Nails",
+    "serviceName": "Silk Wrap",
+    "serviceDescription": "Silk Wrap"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 24,
+    "serviceCategory": "Nails",
+    "serviceName": "Pink & White Power",
+    "serviceDescription": "Silk Wrap"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 26,
+    "serviceCategory": "Nails",
+    "serviceName": "Get Power",
+    "serviceDescription": "Get Powder"
+    }
+]

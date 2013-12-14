@@ -1,0 +1,52 @@
+[
+    
+    {
+    "userID": "TestUser",
+    "serviceID": 27,
+    "serviceCategory": "Facial",
+    "serviceName": "Facial 1 hour",
+    "serviceDescription": "Facial 1 hour"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 28,
+    "serviceCategory": "Facial",
+    "serviceName": "Make up",
+    "serviceDescription": "Make up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 29,
+    "serviceCategory": "Facial",
+    "serviceName": "Eyelash Extension",
+    "serviceDescription": "Make up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 30,
+    "serviceCategory": "Facial",
+    "serviceName": "Eyebrowns",
+    "serviceDescription": "Eyebrows"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 31,
+    "serviceCategory": "Facial",
+    "serviceName": "Chip or upper lip",
+    "serviceDescription": "Make up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 30,
+    "serviceCategory": "Facial",
+    "serviceName": "Full face",
+    "serviceDescription": "Make up"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 31,
+    "serviceCategory": "Nails",
+    "serviceName": "Underarms",
+    "serviceDescription": "Make up"
+    },
+]

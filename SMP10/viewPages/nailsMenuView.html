@@ -1,12 +1,12 @@
-  <!-- FacialMenu --> 
+<!-- NailsMenu --> 
     
-    <div id="tabstrip-facial"         
+    <div id="tabstrip-nails"         
         data-role="view"         
-        data-title="Facial Menu"         
-        data-model="app.facialMenu.viewModel">
+        data-title="Nails Menu"         
+        data-model="app.nailsMenu.viewModel">
 
-        <div class="facialMenu">
-            <p class="facialMenu-title">Top Care Facial Menu</p>
+        <div class="nailsMenu">
+            <p class="nailsMenu-title">Top Care Nails Menu</p>
 
             <div class="separator">
                 <div class="dark"></div>
@@ -14,8 +14,8 @@
             </div>
 
             <ul data-role="listview"
-                data-bind="source: facialMenuDataSource"
-                data-template="facialMenu-template"
+                data-bind="source: nailsMenuDataSource"
+                data-template="nailsMenu-template"
                 data-style="inset">
             </ul>
             
@@ -25,7 +25,7 @@
 
 
 
- <!--facialMenu template-->
-    <script id="facialMenu-template" type="text/x-kendo-template">
+ <!--nailsMenu template-->
+    <script id="nailsMenu-template" type="text/x-kendo-template">
 		<a href="\serviceItems-view?field=serviceID&operator=eq&value=#=serviceID#&title=#:encodeURIComponent(serviceName).replace("'", "%27")#">#=serviceName#</a>
 	</script>

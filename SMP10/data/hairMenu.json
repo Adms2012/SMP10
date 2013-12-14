@@ -3,49 +3,112 @@
     "userID": "TestUser",
     "serviceID": 1,
     "serviceCategory": "Hair",
-    "serviceName": "Man Haircut",
+    "serviceName": "Man haircut",
     "serviceDescription": "Man Haircut"
     },
     {
     "userID": "TestUser",
     "serviceID": 2,
     "serviceCategory": "Hair",
-    "serviceName": "Woman Haircut",
+    "serviceName": "Woman haircut",
     "serviceDescription": "Woman Haircut"
     },
     {
     "userID": "TestUser",
     "serviceID": 3,
     "serviceCategory": "Hair",
-    "serviceName": "Child Haircut",
-    "serviceDescription": "Child Haircut"
+    "serviceName": "* Blowdry extra",
+    "serviceDescription": "Blow dry care"
     },
     {
     "userID": "TestUser",
     "serviceID": 4,
     "serviceCategory": "Hair",
-    "serviceName": "Man Color",
-    "serviceDescription": "Man Color"
+    "serviceName": "Children haircut",
+    "serviceDescription": "Children haircut"
     },
     {
     "userID": "TestUser",
     "serviceID": 5,
     "serviceCategory": "Hair",
-    "serviceName": "Woman Color",
-    "serviceDescription": "Woman Color"
+    "serviceName": "Bang",
+    "serviceDescription": "Bang"
     },
     {
     "userID": "TestUser",
     "serviceID": 6,
     "serviceCategory": "Hair",
-    "serviceName": "Child Color",
-    "serviceDescription": "Child Color"
+    "serviceName": "Shampoo Set",
+    "serviceDescription": "Shampoo Set"
     },
     {
     "userID": "TestUser",
     "serviceID": 7,
     "serviceCategory": "Hair",
-    "serviceName": "Shampoo",
-    "serviceDescription": "Shampoo"
+    "serviceName": "Style",
+    "serviceDescription": "Style"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 8,
+    "serviceCategory": "Hair",
+    "serviceName": "Up-do",
+    "serviceDescription": "Up-do"
+    },
+     {
+    "userID": "TestUser",
+    "serviceID": 9,
+    "serviceCategory": "Hair",
+    "serviceName": "Perm",
+    "serviceDescription": "Perm"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 10,
+    "serviceCategory": "Hair",
+    "serviceName": "Color",
+    "serviceDescription": "Color"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 11,
+    "serviceCategory": "Hair",
+    "serviceName": "Full Weave",
+    "serviceDescription": "Full Weave"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 12,
+    "serviceCategory": "Hair",
+    "serviceName": "Partial Weave",
+    "serviceDescription": "Partial Weave"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 13,
+    "serviceCategory": "Hair",
+    "serviceName": "Deep Conditioner",
+    "serviceDescription": "Deep Conditioner"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 14,
+    "serviceCategory": "Hair",
+    "serviceName": "Japanese Straightening",
+    "serviceDescription": "Japanese Straightening"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 15,
+    "serviceCategory": "Hair",
+    "serviceName": "Brazillian Blowout",
+    "serviceDescription": "Brazillian Blowout"
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 16,
+    "serviceCategory": "Hair",
+    "serviceName": "Hair Extensions",
+    "serviceDescription": "Hair Extensions"
     }
-    ]
+  ]
