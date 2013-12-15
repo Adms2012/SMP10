@@ -14,7 +14,7 @@
 
             <ul data-role="listview"
                 data-bind="source: hairMenuDataSource"
-                data-template="hairMenu-template"
+                data-template="serviceItem-list-template"
                 data-style="inset">
             </ul>
             
@@ -26,4 +26,14 @@
     <!--hairMenu  template-->
     <script id="hairMenu-template" type="text/x-kendo-template">
 		<a href="\#serviceItems-view?field=serviceID&operator=eq&value=#=serviceID#&title=#:encodeURIComponent(serviceName).replace("'", "%27")#">#=serviceName#</a>
+	</script>
+
+	<script id="serviceItem-list-template" type="text/x-kendo-template">
+		<img class="serviceItem-art" />
+		<div class="serviceItem-cart" data-role="button" data-bind="click: onAddServiceItemToCart">
+			<span data-bind="text: qtyInCart, attr: {class: buttonClasses}"></span><span class="km-icon km-cart"></span>
+		</div>
+        <h1 class="serviceItemDesc" data-bind="text: serviceItemDescription"></h1>
+		<h2 class="serviceItemNotes" data-bind="text: serviceItemNotes"></h2>
+        <span class="album-price" data-bind="text: serviceItemUnitPrice"></span>
 	</script>

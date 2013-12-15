@@ -7,8 +7,21 @@
         $(document.body).height(window.innerHeight);
     }, false);
 
-    app.application = new kendo.mobile.Application(document.body, { layout: "tabstrip-layout"});
-
+    var _onError = function (error, url, line) {
+        app.utils.showError(error);
+    };
+    window.onerror = _onError;
+    
+    app.application = new kendo.mobile.Application(document.body, { layout: "tabstrip-layout",
+                                                                    transition: "fade",
+                                                                    // initial: "hairServices-view",
+                                                                 loading: '<h1 class="loading-message">Loading...</h1>'      
+                                                                } );
+    app.utils.init(app.application);
+    
+    app.cart.items.bind("change", function () { app.utils.updateCartBadges($, app.cart); });
+    
+    
     app.changeSkin = function (e) {
         if (e.sender.element.text() === "Flat") {
             e.sender.element.text("Native");

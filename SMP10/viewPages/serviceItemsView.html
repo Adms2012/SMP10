@@ -1,0 +1,31 @@
+	<div data-role="view" id="serviceItems-view" 
+		data-layout="base-layout" 
+		data-model="app.serviceItemsView.viewModel" 
+		data-show="app.serviceItemsView.show" 
+		data-transition="slide:left" style="display: none;">
+			<header data-role="header">
+				<div data-role="navbar">
+					<a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+					<span data-role="view-title"></span>
+				</div>
+			</header>
+
+		<ul id="serviceItems-listview" 
+			data-role="listview" 
+			data-bind="source: serviceItems" 
+			data-auto-bind="false" 
+			data-template="serviceItem-list-template" 
+			data-style="inset" 
+			data-endless-scroll="true"></ul>
+	</div>
+	
+	<script id="serviceItem-list-template" type="text/x-kendo-template">
+		<img class="serviceItem-art" />
+		<div class="serviceItem-cart" data-role="button" data-bind="click: onAddServiceItemToCart">
+			<span data-bind="text: qtyInCart, attr: {class: buttonClasses}"></span><span class="km-icon km-cart"></span>
+		</div>
+        <h1 class="serviceItemDesc" data-bind="text: serviceItemDescription"></h1>
+		<h2 class="serviceItemNotes" data-bind="text: serviceItemNotes"></h2>
+        <span class="album-price" data-bind="text: serviceItemUnitPrice"></span>
+	</script>
+		
