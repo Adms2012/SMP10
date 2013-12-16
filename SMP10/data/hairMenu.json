@@ -42,11 +42,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Children haircut",
     "serviceDescription": "Children haircut",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 4,
+    "serviceItemDescription": "Children haircut",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -54,8 +54,8 @@
     "serviceCategory": "Hair",
     "serviceName": "Bang",
     "serviceDescription": "Bang",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 5,
+    "serviceItemDescription": "Bang",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": ""
@@ -66,11 +66,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Shampoo Set",
     "serviceDescription": "Shampoo Set",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 6,
+    "serviceItemDescription": "Shampoo Set",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -78,11 +78,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Style",
     "serviceDescription": "Style",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 7,
+    "serviceItemDescription": "Style",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -90,11 +90,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Up-do",
     "serviceDescription": "Up-do",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
-    "serviceItemUnitPrice":        10,
+    "serviceItemId": 8,
+    "serviceItemDescription": "Up-do",
+    "serviceItemUnitPrice":        "35",
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
      {
     "userID": "TestUser",
@@ -102,9 +102,9 @@
     "serviceCategory": "Hair",
     "serviceName": "Perm",
     "serviceDescription": "Perm",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
-    "serviceItemUnitPrice":        10,
+    "serviceItemId": 9,
+    "serviceItemDescription": "Perm",
+    "serviceItemUnitPrice":        "35",
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": ""
     },
@@ -114,11 +114,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Color",
     "serviceDescription": "Color",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 10,
+    "serviceItemDescription": "Color",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -126,11 +126,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Full Weave",
     "serviceDescription": "Full Weave",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 11,
+    "serviceItemDescription": "Full Weave",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -138,8 +138,8 @@
     "serviceCategory": "Hair",
     "serviceName": "Partial Weave",
     "serviceDescription": "Partial Weave",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 12,
+    "serviceItemDescription": "Partial Weave",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": ""
@@ -150,11 +150,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Deep Conditioner",
     "serviceDescription": "Deep Conditioner",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 13,
+    "serviceItemDescription": "Deep Conditioner",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -162,11 +162,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Japanese Straightening",
     "serviceDescription": "Japanese Straightening",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 14,
+    "serviceItemDescription": "Japanese Straightening",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -174,11 +174,11 @@
     "serviceCategory": "Hair",
     "serviceName": "Brazillian Blowout",
     "serviceDescription": "Brazillian Blowout",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 15,
+    "serviceItemDescription": "Brazillian Blowout",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     },
     {
     "userID": "TestUser",
@@ -186,10 +186,10 @@
     "serviceCategory": "Hair",
     "serviceName": "Hair Extensions",
     "serviceDescription": "Hair Extensions",
-    "serviceItemId": 3,
-    "serviceItemDescription": "* Blowdry extra",
+    "serviceItemId": 16,
+    "serviceItemDescription": "Hair Extensions",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "and up"
     }
   ]
