@@ -20,7 +20,17 @@
     app.utils.init(app.application);
     
     app.cart.items.bind("change", function () { app.utils.updateCartBadges($, app.cart); });
-    
+     
+    app.onAddServiceItemToCart = function (clickEvt) {
+                alert('click');
+                var serviceItem = clickEvt.data;
+                app.cart.add(serviceItem);
+
+                // force refresh of data bindings.
+                var aid = serviceItem.get("serviceItemId");
+                serviceItem.set("serviceItemId", -1);
+                serviceItem.set("serviceItemId", aid);
+            };   
     
     app.changeSkin = function (e) {
         if (e.sender.element.text() === "Flat") {
