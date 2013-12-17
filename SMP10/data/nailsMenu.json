@@ -1,65 +1,122 @@
  [
     {
     "userID": "TestUser",
-    "serviceID": 17,
+    "serviceID": 101,
     "serviceCategory": "Nails",
     "serviceName": "Manicure",
-    "serviceDescription": "Manicure"
+    "serviceDescription": "Manicure",
+    "serviceItemId": 101,
+    "serviceItemDescription",  "Manicure",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 11,
+    "serviceItemNotes:""
     },
     {
     "userID": "TestUser",
-    "serviceID": 18,
+    "serviceID": 102,
     "serviceCategory": "Nails",
     "serviceName": "Pedicure",
-    "serviceDescription": "Pedicure"
+    "serviceDescription": "Pedicure",
+    "serviceItemId": 102,
+    "serviceItemDescription,  "Pedicure",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 14,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 19,
+    "serviceID": 103,
     "serviceCategory": "Nails",
     "serviceName": "Spa Pedicure",
-    "serviceDescription": "Spa Pedicure"
+    "serviceDescription": "Spa Pedicure",
+    "serviceItemId": 103,
+    "serviceItemDescription,  "Spa Pedicure",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 17,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 20,
+    "serviceID": 104,
     "serviceCategory": "Nails",
     "serviceName": "Manicure & Pedicure",
-    "serviceDescription": "Manicure & Pedicure"
+    "serviceDescription": "Manicure & Pedicure",
+    "serviceItemId": 104,
+    "serviceItemDescription,  "Manicure & Pedicure",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 23,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 21,
+    "serviceID": 105,
     "serviceCategory": "Nails",
     "serviceName": "Manicure & Spa Pedicure",
-    "serviceDescription": "Manicure & Spa Pedicure"
+    "serviceDescription": "Manicure & Spa Pedicure",
+    "serviceItemId": 105,
+    "serviceItemDescription,  "Manicure & Spa Pedicure",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 26,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 22,
+    "serviceID": 106,
     "serviceCategory": "Nails",
     "serviceName": "White tip",
-    "serviceDescription": "White tip"
+    "serviceDescription": "White tip",
+    "serviceItemId": 106,
+    "serviceItemDescription,  "White tip",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 26,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 23,
+    "serviceID": 107,
     "serviceCategory": "Nails",
     "serviceName": "Silk Wrap",
-    "serviceDescription": "Silk Wrap"
+    "serviceDescription": "Silk Wrap",
+    "serviceItemId": 107,
+    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 26,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 24,
+    "serviceID": 108,
     "serviceCategory": "Nails",
     "serviceName": "Pink & White Power",
-    "serviceDescription": "Silk Wrap"
+    "serviceDescription": "Silk Wrap",
+    "serviceItemId": 108,
+    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 26,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 26,
+    "serviceID": 109,
+    "serviceCategory": "Nails",
+    "serviceName": "Gel Gelish",
+    "serviceDescription": "Gelish",
+    "serviceItemId": 109,
+    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 26,
+    "serviceItemNotes": ""
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 110,
     "serviceCategory": "Nails",
     "serviceName": "Get Power",
     "serviceDescription": "Get Powder"
+    "serviceItemId": 110,
+    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemLengthInMinute": 30, 
+    "serviceItemUnitPrice: 25,
+    "serviceItemNotes": ""
     }
 ]

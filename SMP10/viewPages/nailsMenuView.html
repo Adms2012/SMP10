@@ -5,27 +5,50 @@
         data-title="Nails Menu"         
         data-model="app.nailsMenu.viewModel">
 
-        <div class="nailsMenu">
-            <p class="nailsMenu-title">Top Care Nails Menu</p>
-
-            <div class="separator">
-                <div class="dark"></div>
-                <div class="light"></div>
+        <header data-role="header">
+            <div data-role="navbar">
+                <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+                <span data-role="view-title"></span>
             </div>
+        </header>    
+             
+        <ul data-role="listview"
+            data-bind="source: nailsMenuDataSource"
+            data-template="serviceItem-list-Template"
+            data-style="inset">   
+        </ul>
+    </div>  
+  
+    <script id="serviceItem-list-template" type="text/x-kendo-template">
+        <!--div class="km-listview"-->
+    		<!--img class="serviceItem-art" /-->
+    		<div style ="float:right; margin-right:.8em; vertical-align:middle; padding-bottom:.45em;" 
+                 data-role="button" data-bind="click: onAddServiceItemToCart">
+    			<span data-bind="text: qtyInCart, attr: {class: buttonClasses}"></span>
+                <span class="km-icon km-cart"></span>
+    		</div>
+            <h1 style="margin: 0; font-size: 16px; margin-left: 10px;" data-bind="text: serviceItemDescription"></h1>
+    		<h2 style="margin: 0; font-size: 12px; margin-left: 14px; font-weight: normal;" data-bind="text: serviceItemNotes"></h2> 
+            <div style="float:right; margin-right:1.0em; vertical-align:middle; padding-bottom:.45em;"  data-bind="text: serviceItemUnitPrice "></div>        
+            <div style="float:right; margin-right:0.2em; vertical-align:middle; padding-bottom:.45em;">$    </div>
+        
+        <!--/div-->
+     </script>
 
-            <ul data-role="listview"
-                data-bind="source: nailsMenuDataSource"
-                data-template="nailsMenu-template"
-                data-style="inset">
-            </ul>
+        
+        
             
-        </div>
-    </div>
+        
+    
 
 
 
 
  <!--nailsMenu template-->
+
+
+<!--
     <script id="nailsMenu-template" type="text/x-kendo-template">
 		<a href="\serviceItems-view?field=serviceID&operator=eq&value=#=serviceID#&title=#:encodeURIComponent(serviceName).replace("'", "%27")#">#=serviceName#</a>
 	</script>
+-->
