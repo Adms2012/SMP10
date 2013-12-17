@@ -21,10 +21,32 @@
             });
 
             that.set("hairMenuDataSource", dataSource);
-        }
-    });
+        },
+        onAddServiceItemToCart: function (clickEvt) {
+            var serviceItem = clickEvt.data;
+            app.cart.add(serviceItem);
 
+            // force refresh of data bindings.
+            var aid = serviceItem.get("serviceItemId");
+            //alert(aid);
+            serviceItem.set("serviceItemId", -1);
+            serviceItem.set("serviceItemId", aid);
+        },
+        qtyInCart: function (serviceItem) {
+            var cartItem = app.cart.find(serviceItem.get("serviceItemId"));
+            if(cartItem) {
+                return cartItem.get("qty");
+            } else {
+                return "";
+            }
+        }        
+      
+    });
+    
+
+   
     app.hairMenu = {
         viewModel: new hairMenuViewModel()
     };
+    
 })(window);
