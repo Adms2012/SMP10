@@ -7,7 +7,8 @@
 
         init: function () {
             var that = this,
-                dataSource;
+                dataSource,
+                dataSourceNails;
 
             kendo.data.ObservableObject.fn.init.apply(that, []);
 
@@ -19,8 +20,17 @@
                     }
                 }
             });
-
             that.set("hairMenuDataSource", dataSource);
+
+            dataSourceNails = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "data/nailsMenu.json",
+                        dataType: "json"
+                    }
+                }
+            });
+            that.set("nailsMenuDataSource", dataSourceNails);
         },
         onAddServiceItemToCart: function (clickEvt) {
             var serviceItem = clickEvt.data;

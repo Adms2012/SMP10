@@ -6,10 +6,10 @@
     "serviceName": "Manicure",
     "serviceDescription": "Manicure",
     "serviceItemId": 101,
-    "serviceItemDescription",  "Manicure",
+    "serviceItemDescription":  "Manicure",
+    "serviceItemUnitPrice": 11,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 11,
-    "serviceItemNotes:""
+    "serviceItemNotes":""
     },
     {
     "userID": "TestUser",
@@ -18,9 +18,9 @@
     "serviceName": "Pedicure",
     "serviceDescription": "Pedicure",
     "serviceItemId": 102,
-    "serviceItemDescription,  "Pedicure",
+    "serviceItemDescription":  "Pedicure",
+    "serviceItemUnitPrice": 14,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 14,
     "serviceItemNotes": ""
     },
     {
@@ -30,9 +30,9 @@
     "serviceName": "Spa Pedicure",
     "serviceDescription": "Spa Pedicure",
     "serviceItemId": 103,
-    "serviceItemDescription,  "Spa Pedicure",
+    "serviceItemDescription":  "Spa Pedicure",
+    "serviceItemUnitPrice": 17,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 17,
     "serviceItemNotes": ""
     },
     {
@@ -42,9 +42,9 @@
     "serviceName": "Manicure & Pedicure",
     "serviceDescription": "Manicure & Pedicure",
     "serviceItemId": 104,
-    "serviceItemDescription,  "Manicure & Pedicure",
+    "serviceItemDescription":  "Manicure & Pedicure",
+    "serviceItemUnitPrice": 23,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 23,
     "serviceItemNotes": ""
     },
     {
@@ -54,9 +54,9 @@
     "serviceName": "Manicure & Spa Pedicure",
     "serviceDescription": "Manicure & Spa Pedicure",
     "serviceItemId": 105,
-    "serviceItemDescription,  "Manicure & Spa Pedicure",
+    "serviceItemDescription":  "Manicure & Spa Pedicure",
+    "serviceItemUnitPrice": 26,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 26,
     "serviceItemNotes": ""
     },
     {
@@ -66,9 +66,9 @@
     "serviceName": "White tip",
     "serviceDescription": "White tip",
     "serviceItemId": 106,
-    "serviceItemDescription,  "White tip",
+    "serviceItemDescription":  "White tip",
+    "serviceItemUnitPrice": 26,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 26,
     "serviceItemNotes": ""
     },
     {
@@ -78,9 +78,9 @@
     "serviceName": "Silk Wrap",
     "serviceDescription": "Silk Wrap",
     "serviceItemId": 107,
-    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemDescription":  "Silk Wrap",
+    "serviceItemUnitPrice": 26,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 26,
     "serviceItemNotes": ""
     },
     {
@@ -90,9 +90,9 @@
     "serviceName": "Pink & White Power",
     "serviceDescription": "Silk Wrap",
     "serviceItemId": 108,
-    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemDescription":  "Silk Wrap",
+    "serviceItemUnitPrice": 26,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 26,
     "serviceItemNotes": ""
     },
     {
@@ -102,21 +102,34 @@
     "serviceName": "Gel Gelish",
     "serviceDescription": "Gelish",
     "serviceItemId": 109,
-    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemDescription":  "Silk Wrap",
+    "serviceItemUnitPrice": 26,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 26,
+    "serviceItemNotes": ""
+    },
+    {
+    "userID": "TestUser",
+    "serviceID": 109,
+    "serviceCategory": "Nails",
+    "serviceName": "Gel Gelish",
+    "serviceDescription": "Gelish",
+    "serviceItemId": 109,
+    "serviceItemDescription":  "Silk Wrap",
+    "serviceItemUnitPrice": 26,
+    "serviceItemLengthInMinute": 30, 
     "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
     "serviceID": 110,
     "serviceCategory": "Nails",
-    "serviceName": "Get Power",
-    "serviceDescription": "Get Powder"
+    "serviceName": "Get Powder",
+    "serviceDescription": "Get Powder",
     "serviceItemId": 110,
-    "serviceItemDescription,  "Silk Wrap",
+    "serviceItemDescription":  "Silk Wrap",
+    "serviceItemUnitPrice": 25,
     "serviceItemLengthInMinute": 30, 
-    "serviceItemUnitPrice: 25,
     "serviceItemNotes": ""
     }
+
 ]
