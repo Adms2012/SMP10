@@ -1,37 +1,42 @@
-   <!--Weather-->
-    <div id="tabstrip-cart"
-        data-role="view"
-        data-title="Weather"
-        data-model="app.weatherService.viewModel">
+	<!-- Cart Checkout Views -->
 
-        <div class="weather">
-            <p class="weather-title">20-Day Forecast</p>
+	<div    data-role="view" 
+            id="cart-view" 
+            data-layout="cart-layout" 
+            data-title="Cart" 
+            data-model="app.cartView.viewModel" 
+            data-init="app.cartView.init" style="display: none;">
+        
+		<header data-role="header" class="cart-header">
+			<div data-role="navbar">
+				<a class="nav-button" data-align="left" data-role="backbutton" data-bind="visible: isAndroid"></a>
+				<span data-role="view-title"></span>
+				<a data-role="button" href="#checkout-view" data-align="right" data-bind="visible: cartHasItems">Checkout</a>
+			</div>
+			<h3>Swipe to Remove Item</h3>
+			<h1>
+				TOTAL: <span class="total" data-bind="text: cart.aggregates.formattedTotal"></span>
+			</h1>
+		</header>
 
-            <div class="separator">
-                <div class="dark"></div>
-                <div class="light"></div>
-            </div>
+		<ul data-role="listview" data-bind="source: items" data-template="cart-list-template" data-style="inset"></ul>
+	</div>
 
-            <ul class="forecast-list"
-                data-role="listview"
-                data-bind="source: weatherDataSource"
-                data-template="weather-forecast-template">
-            </ul>
-        </div>
-    </div>
 
-    <!--Weather forecast template-->
-    <script type="text/x-kendo-tmpl" id="weather-forecast-template">
-        <div>
-            <div class="position-left">
-                <span class="weather-info date">${day}</span>
-            </div>
-            <div class="position-right">
-                <span class="weather-info temperature high">${highTemperature}<sup>&deg;</sup></span>
-                <span class="weather-info temperature low">${lowTemperature}<sup>&deg;</sup></span>
-            </div>
-            <div class="position-center">
-                <span class="weather-icon ${image}"></span>
-            </div>
-        </div>
-    </script>
+    <!--Cart list template-->
+	<script id="cart-list-template" type="text/x-kendo-template">
+		<div data-role="touch" data-enable-swipe="1" data-swipe="app.cartView.onToggleDeleteMode" data-hold="app.cartView.onToggleDeleteMode">
+			<div class="qty-and-price">
+				<strong data-bind="invisible: deleteMode">Qty</strong>
+				<input type="number" data-bind="value: qty, invisible: deleteMode" min="1" max="99" />
+				<span class="cart-delete-button" data-role="button" data-click="app.cartView.onRemove" data-bind="visible: deleteMode" data-icon="trash"></span>
+			</div>
+		    <img class="serviceItem-art" />
+			<h1 class="serviceItemDesc" data-bind="text: serviceItem.serviceItemDescription"></h1>
+			<h2 class="serviceItemNotes" data-bind="text: serviceItem.serviceItemDescription"></h2>
+			<span class="album-price" data-bind="text: serviceItem.serviceItemUnitPrice"></span>
+			<div class="subtotal">
+				Subtotal: <span data-bind="text: serviceItemSubtotal"></span>
+			</div>
+		</div>
+	</script>
