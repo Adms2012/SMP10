@@ -8,7 +8,8 @@
         init: function () {
             var that = this,
                 dataSource,
-                dataSourceNails;
+                dataSourceNails,
+                dataSourceFacial;
 
             kendo.data.ObservableObject.fn.init.apply(that, []);
 
@@ -31,6 +32,17 @@
                 }
             });
             that.set("nailsMenuDataSource", dataSourceNails);
+            
+            dataSourceFacial = new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        url: "data/facialMenu.json",
+                        dataType: "json"
+                    }
+                }
+            });
+            that.set("facialMenuDataSource", dataSourceFacial);
+            
         },
         onAddServiceItemToCart: function (clickEvt) {
             var serviceItem = clickEvt.data;

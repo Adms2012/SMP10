@@ -2,114 +2,195 @@
     
     {
     "userID": "TestUser",
-    "serviceID": 27,
+    "serviceID": 200,
     "serviceCategory": "Facial",
     "serviceName": "Facial 1 hour",
-    "serviceDescription": "Facial 1 hour"
+    "serviceDescription": "Facial 1 hour",
+    "serviceItemId": 200,
+    "serviceItemDescription": "Facial 1 hour",
+    "serviceItemUnitPrice":        12,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 28,
+    "serviceID": 201,
     "serviceCategory": "Facial",
     "serviceName": "Make up",
-    "serviceDescription": "Make up"
+    "serviceDescription": "Make up",
+    "serviceItemId": 201,
+    "serviceItemDescription": "Make up",
+    "serviceItemUnitPrice":        52,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 29,
+    "serviceID": 202,
     "serviceCategory": "Facial",
     "serviceName": "Eyelash Extension",
-    "serviceDescription": "Eyelash Extension"
+    "serviceDescription": "Eyelash Extension",
+    "serviceItemId": 202,
+    "serviceItemDescription": "Eyelash Extension",
+    "serviceItemUnitPrice":        50,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
-    "serviceID": 30,
+    "serviceID": 203,
     "serviceCategory": "Facial",
     "serviceName": "Eyebrowns",
-    "serviceDescription": "Eyebrows"
+    "serviceDescription": "Eyebrows",
+    "serviceItemId": 203,
+    "serviceItemDescription": "Eyebrows",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 31,
+    "serviceID": 204,
     "serviceCategory": "Facial",
     "serviceName": "Chip or upper lip",
-    "serviceDescription": "Chip or upper lip"
+    "serviceDescription": "Chip or upper lip",
+    "serviceItemId": 204,
+    "serviceItemDescription": "Chip or upper lip",
+    "serviceItemUnitPrice":        75,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
+
     },
     {
     "userID": "TestUser",
-    "serviceID": 32,
+    "serviceID": 205,
     "serviceCategory": "Facial",
     "serviceName": "Full face",
-    "serviceDescription": "Full face"
+    "serviceDescription": "Full face",
+    "serviceItemId": 205,
+    "serviceItemDescription": "Full Face",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 33,
+    "serviceID": 206,
     "serviceCategory": "Facial",
     "serviceName": "Underarms",
-    "serviceDescription": "Underarms"
+    "serviceDescription": "Underarms",
+    "serviceItemId": 206,
+    "serviceItemDescription": "Underarms",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 34,
+    "serviceID": 207,
     "serviceCategory": "Facial",
     "serviceName": "Bikini lines",
-    "serviceDescription": "Bikini lines"
+    "serviceDescription": "Bikini lines",
+    "serviceItemId": 207,
+    "serviceItemDescription": "Bikini lines",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 35,
+    "serviceID": 208,
     "serviceCategory": "Facial",
     "serviceName": "Full leg",
-    "serviceDescription": "Full leg"
+    "serviceDescription": "Full leg",
+    "serviceItemId": 208,
+    "serviceItemDescription": "Full leg",
+    "serviceItemUnitPrice":        60,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 36,
+    "serviceID": 209,
     "serviceCategory": "Facial",
     "serviceName": "Half leg",
-    "serviceDescription": "Half leg"
+    "serviceDescription": "Half leg",
+    "serviceItemId": 209,
+    "serviceItemDescription": "Half leg",
+    "serviceItemUnitPrice":        45,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 37,
+    "serviceID": 210,
     "serviceCategory": "Facial",
     "serviceName": "Full arm",
-    "serviceDescription": "Full arm"
+    "serviceDescription": "Full arm",
+    "serviceItemId": 210,
+    "serviceItemDescription": "Full arm",
+    "serviceItemUnitPrice":        50,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 38,
+    "serviceID": 211,
     "serviceCategory": "Facial",
     "serviceName": "Half arm",
-    "serviceDescription": "Half arm"
+    "serviceDescription": "Half arm",
+    "serviceItemId": 211,
+    "serviceItemDescription": "Half arm",
+    "serviceItemUnitPrice":        30,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 39,
+    "serviceID": 212,
     "serviceCategory": "Facial",
     "serviceName": "Eyebrows Soft-touch Perm. Make-up",
-    "serviceDescription": "Eyebrows Soft-touch Perm. Make-up"
+    "serviceDescription": "Eyebrows Soft-touch Perm. Make-up",
+    "serviceItemId": 212,
+    "serviceItemDescription": "Eyebrows soft-touch Per. Make-up",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 40,
+    "serviceID": 213,
     "serviceCategory": "Facial",
     "serviceName": "Lipliner Soft-touch Perm. Make-up",
-    "serviceDescription": "Lipliner Soft-touch Perm. Make-up"
+    "serviceDescription": "Lipliner Soft-touch Perm. Make-up",
+    "serviceItemId": 213,
+    "serviceItemDescription": "Lipliner Soft-touch Perm. Make-up",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 41,
+    "serviceID": 214,
     "serviceCategory": "Facial",
     "serviceName": "Eyeliner Soft-touch Perm. Make-up",
-    "serviceDescription": "Eyeliner Soft-touch Perm. Make-up"
+    "serviceDescription": "Eyeliner Soft-touch Perm. Make-up",
+    "serviceItemId": 214,
+    "serviceItemDescription": "Eyeliner Soft-touch Perm. Make-up",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
-    "serviceID": 42,
+    "serviceID": 215,
     "serviceCategory": "Facial",
     "serviceName": "Full-lips Soft-touch Perm. Make-up",
-    "serviceDescription": "Full-lips Soft-touch Perm. Make-up"
+    "serviceDescription": "Full-lips Soft-touch Perm. Make-up",
+    "serviceItemId": 215,
+    "serviceItemDescription": "Full-lips Soft-touch Perm. Make-up",
+    "serviceItemUnitPrice":        100,
+    "serviceItemLengthInMinutes": 30,
+    "serviceItemNotes": "up"
     }
 ]
