@@ -23,7 +23,7 @@
             li.animate(animation,
                 300,
                 function () {
-                    app.cart.items.remove(cart.items.getByUid(uid));
+                    app.cart.items.remove(app.cart.items.getByUid(uid));
                     _scrollToTopIfTooFewItemsInCart();
                 });
         },
