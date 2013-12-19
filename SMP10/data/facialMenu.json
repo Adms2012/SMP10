@@ -8,7 +8,7 @@
     "serviceDescription": "Facial 1 hour",
     "serviceItemId": 200,
     "serviceItemDescription": "Facial 1 hour",
-    "serviceItemUnitPrice":        12,
+    "serviceItemUnitPrice":        35,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": ""
     },
@@ -20,9 +20,9 @@
     "serviceDescription": "Make up",
     "serviceItemId": 201,
     "serviceItemDescription": "Make up",
-    "serviceItemUnitPrice":        52,
+    "serviceItemUnitPrice":        30,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": ""
+    "serviceItemNotes": "up"
     },
     {
     "userID": "TestUser",
@@ -32,7 +32,7 @@
     "serviceDescription": "Eyelash Extension",
     "serviceItemId": 202,
     "serviceItemDescription": "Eyelash Extension",
-    "serviceItemUnitPrice":        50,
+    "serviceItemUnitPrice":        30,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": ""
     },
@@ -44,9 +44,9 @@
     "serviceDescription": "Eyebrows",
     "serviceItemId": 203,
     "serviceItemDescription": "Eyebrows",
-    "serviceItemUnitPrice":        100,
+    "serviceItemUnitPrice":        8,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": "up"
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
@@ -56,9 +56,9 @@
     "serviceDescription": "Chip or upper lip",
     "serviceItemId": 204,
     "serviceItemDescription": "Chip or upper lip",
-    "serviceItemUnitPrice":        75,
+    "serviceItemUnitPrice":        5,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": "up"
+    "serviceItemNotes": ""
 
     },
     {
@@ -69,9 +69,9 @@
     "serviceDescription": "Full face",
     "serviceItemId": 205,
     "serviceItemDescription": "Full Face",
-    "serviceItemUnitPrice":        100,
+    "serviceItemUnitPrice":        22,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": "up"
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
@@ -81,7 +81,7 @@
     "serviceDescription": "Underarms",
     "serviceItemId": 206,
     "serviceItemDescription": "Underarms",
-    "serviceItemUnitPrice":        100,
+    "serviceItemUnitPrice":        12,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     },
@@ -93,9 +93,9 @@
     "serviceDescription": "Bikini lines",
     "serviceItemId": 207,
     "serviceItemDescription": "Bikini lines",
-    "serviceItemUnitPrice":        100,
+    "serviceItemUnitPrice":        15,
     "serviceItemLengthInMinutes": 30,
-    "serviceItemNotes": "up"
+    "serviceItemNotes": ""
     },
     {
     "userID": "TestUser",
@@ -105,7 +105,7 @@
     "serviceDescription": "Full leg",
     "serviceItemId": 208,
     "serviceItemDescription": "Full leg",
-    "serviceItemUnitPrice":        60,
+    "serviceItemUnitPrice":        40,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     },
@@ -117,7 +117,7 @@
     "serviceDescription": "Half leg",
     "serviceItemId": 209,
     "serviceItemDescription": "Half leg",
-    "serviceItemUnitPrice":        45,
+    "serviceItemUnitPrice":        25,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     },
@@ -129,7 +129,7 @@
     "serviceDescription": "Full arm",
     "serviceItemId": 210,
     "serviceItemDescription": "Full arm",
-    "serviceItemUnitPrice":        50,
+    "serviceItemUnitPrice":        30,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     },
@@ -141,7 +141,7 @@
     "serviceDescription": "Half arm",
     "serviceItemId": 211,
     "serviceItemDescription": "Half arm",
-    "serviceItemUnitPrice":        30,
+    "serviceItemUnitPrice":        20,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     },
@@ -153,7 +153,7 @@
     "serviceDescription": "Eyebrows Soft-touch Perm. Make-up",
     "serviceItemId": 212,
     "serviceItemDescription": "Eyebrows soft-touch Per. Make-up",
-    "serviceItemUnitPrice":        100,
+    "serviceItemUnitPrice":        150,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     },
@@ -189,7 +189,7 @@
     "serviceDescription": "Full-lips Soft-touch Perm. Make-up",
     "serviceItemId": 215,
     "serviceItemDescription": "Full-lips Soft-touch Perm. Make-up",
-    "serviceItemUnitPrice":        100,
+    "serviceItemUnitPrice":        300,
     "serviceItemLengthInMinutes": 30,
     "serviceItemNotes": "up"
     }

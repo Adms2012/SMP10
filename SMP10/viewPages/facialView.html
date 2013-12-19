@@ -26,11 +26,11 @@
 		<!--img class="serviceItem-art" /-->
 		<div style ="float:right; margin-right:.8em; vertical-align:middle; padding-bottom:.45em;" 
              data-role="button" data-bind="click: onAddServiceItemToCart  ">
-			<span style ="color:yellow; font-weight:bold; font-size: .6em; margin-right: .8em; vertical-align:middle;" data-bind="text: qtyInCart"></span>
+			<span style ="color:red; font-weight:bold; font-size: .6em; margin-right: .8em; vertical-align:middle;" data-bind="text: qtyInCart"></span>
             <span class="km-icon km-cart"></span>
 		</div>
         <h1 style="margin: 0; font-size: 16px; margin-left: 10px;" data-bind="text: serviceItemDescription"></h1>
 		<h2 style="margin: 0; font-size: 12px; margin-left: 14px; font-weight: normal;" data-bind="text: serviceItemNotes"></h2> 
-        <div style="float:right; margin-right:1.0em; vertical-align:middle; padding-bottom:.45em;"  data-bind="text: serviceItemUnitPrice "></div>        
-        <div style="float:right; margin-right:0.2em; vertical-align:middle; padding-bottom:.45em;">$    </div>
+        <div style="float:right; margin-right:1.0em; vertical-align:middle; padding-bottom:.45em;"  data-bind="text: serviceItemPriceFormatted "></div>        
+        <!--div style="float:right; margin-right:0.2em; vertical-align:middle; padding-bottom:.45em;">$    </div-->
 	</script>
