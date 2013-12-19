@@ -4,16 +4,18 @@
         app = global.app = global.app || {};    
     
     var _scrollToTopIfTooFewItemsInCart = function () {
+        alert('_scrollToTopIfTooFewItemsInCart');
         if(_view.scrollerContent.height() < _view.scroller.element.height()) {
             app.utils.scrollViewToTop(_view.element);
         }
     };
 
     var onRemove = function (clickEvt) {
+            //alert('onRemove');
             var element = clickEvt.sender.element;
             var li = element.parents("li");
             var uid = li.data("uid");
-
+            
             var animation = {
                 "opacity": 0
             };
@@ -27,6 +29,7 @@
         },
 
         onToggleDeleteMode = function (evt) {
+            alert('onToggleDeleteMode');
             var element = evt.sender.element;
             var li = element.parents("li");
             var uid = li.data("uid");

@@ -45,6 +45,7 @@
         },
 
         addserviceItem = function (serviceItem) {
+            //alert('addserviceItem');
             var existing = findserviceItem(serviceItem.serviceItemId);
             if(existing) {
                 existing.set("qty", existing.qty + 1);
@@ -54,6 +55,7 @@
         },
 
         clear = function () {
+            alert('clear');
             for(var i = cartItems.data().length - 1; i >= 0; i--) {
                 cartItems.remove(cartItems.data()[i]);
             }
