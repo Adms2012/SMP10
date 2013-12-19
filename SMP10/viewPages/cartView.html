@@ -25,18 +25,21 @@
 
     <!--Cart list template-->
 	<script id="cart-list-template" type="text/x-kendo-template">
-		<div data-role="touch" data-enable-swipe="1" data-swipe="app.cartView.onToggleDeleteMode" data-hold="app.cartView.onToggleDeleteMode">
-			<div class="qty-and-price">
-				<strong data-bind="invisible: deleteMode">Qty</strong>
+		<div data-role="touch" data-enable-swipe="1" data-swipe="app.cartView.onToggleDeleteMode" 
+                               data-hold="app.cartView.onToggleDeleteMode">
+			<div style="font-size:16px; float:right; width:50px; margin-left:10px;">
+				<strong style="display:block; text-align: center; margin-bottom:15px;" data-bind="invisible: deleteMode">Qty</strong>
 				<input type="number" data-bind="value: qty, invisible: deleteMode" min="1" max="99" />
-				<span class="cart-delete-button" data-role="button" data-click="app.cartView.onRemove" data-bind="visible: deleteMode" data-icon="trash"></span>
+				<span style="background-color:red;" data-role="button" data-click="app.cartView.onRemove" data-bind="visible: deleteMode" data-icon="trash"></span>
 			</div>
-		    <img class="serviceItem-art" />
-			<h1 class="serviceItemDesc" data-bind="text: serviceItem.serviceItemDescription"></h1>
-			<h2 class="serviceItemNotes" data-bind="text: serviceItem.serviceItemDescription"></h2>
-			<span class="album-price" data-bind="text: serviceItem.serviceItemUnitPrice"></span>
-			<div class="subtotal">
+		    <!--img class="serviceItem-art" /-->
+			<h1 style="margin: 0; font-size: 16px; margin-left: 10px;" data-bind="text: serviceItem.serviceItemDescription"></h1>
+			<h2 style="margin: 0; font-size: 12px; margin-left: 14px;" data-bind="text: serviceItem.serviceItemNotes"></h2>
+			<span style="display:block; margin-left:60px;font-size: .7em"
+                data-bind="text: serviceItem.serviceItemPrice"></span>
+			<div style="font-size:12px; clear:both; text-align:right; padding-top: 10px;">
 				Subtotal: <span data-bind="text: serviceItemSubtotal"></span>
 			</div>
 		</div>
 	</script>
+

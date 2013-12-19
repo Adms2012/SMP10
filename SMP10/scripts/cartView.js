@@ -5,7 +5,7 @@
     
     var _scrollToTopIfTooFewItemsInCart = function () {
         if(_view.scrollerContent.height() < _view.scroller.element.height()) {
-            utils.scrollViewToTop(_view.element);
+            app.utils.scrollViewToTop(_view.element);
         }
     };
 
@@ -21,7 +21,7 @@
             li.animate(animation,
                 300,
                 function () {
-                    cart.items.remove(cart.items.getByUid(uid));
+                    app.cart.items.remove(cart.items.getByUid(uid));
                     _scrollToTopIfTooFewItemsInCart();
                 });
         },
@@ -30,7 +30,7 @@
             var element = evt.sender.element;
             var li = element.parents("li");
             var uid = li.data("uid");
-            var cartItem = cart.items.getByUid(uid);
+            var cartItem = app.cart.items.getByUid(uid);
 
             cartItem.set("deleteMode", !cartItem.deleteMode);
         },
@@ -43,8 +43,10 @@
             isAndroid: function () {
                 return $("body").hasClass("km-android");
             },
-
             serviceItemPrice: function (cartItem) {
+                return kendo.toString(parseFloat(cartItem.serviceItem.get("serviceItemUnitPrice")), "c");
+            },
+            serviceItemPriceCurrrency: function (cartItem) {
                 return kendo.toString(parseFloat(cartItem.serviceItem.get("serviceItemUnitPrice")), "c");
             },
             serviceItemArtUrl: function (cartItem) {
@@ -57,9 +59,9 @@
 
         init = function (initEvt) {
             _view = initEvt.view
-            viewModel.set("cartHasItems", cart.items.view().length > 0);
-            cart.items.bind("change", function () {
-                viewModel.set("cartHasItems", cart.items.view().length > 0);
+            viewModel.set("cartHasItems", app.cart.items.view().length > 0);
+            app.cart.items.bind("change", function () {
+                viewModel.set("cartHasItems", app.cart.items.view().length > 0);
             });
         },
 

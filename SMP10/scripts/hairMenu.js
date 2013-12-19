@@ -44,6 +44,9 @@
             that.set("facialMenuDataSource", dataSourceFacial);
             
         },
+        serviceItemPriceFormatted: function (cartItem) {
+            return kendo.toString(parseFloat(cartItem.get("serviceItemUnitPrice")), "c");
+        },        
         onAddServiceItemToCart: function (clickEvt) {
             var serviceItem = clickEvt.data;
             app.cart.add(serviceItem);
