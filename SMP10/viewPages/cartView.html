@@ -8,11 +8,11 @@
             data-init="app.cartView.init" style="display: none;">
         
 		<header data-role="header" class="cart-header">
-			<div data-role="navbar">
-				<a class="nav-button" data-align="left" data-role="backbutton" data-bind="visible: isAndroid"></a>
-				<span data-role="view-title"></span>
+            <div data-role="navbar">
+                <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+                <span data-role="view-title"></span>
 				<a data-role="button" href="#checkout-view" data-align="right" data-bind="visible: cartHasItems">Checkout</a>
-			</div>
+            </div>                
 			<h3>Swipe to Remove Item</h3>
 			<h1>
 				TOTAL: <span class="total" data-bind="text: cart.aggregates.formattedTotal"></span>
@@ -28,9 +28,11 @@
 		<div data-role="touch" data-enable-swipe="1" data-swipe="app.cartView.onToggleDeleteMode" 
                                data-hold="app.cartView.onToggleDeleteMode">
 			<div style="font-size:16px; float:right; width:50px; margin-left:10px;">
-				<strong style="display:block; text-align: center; margin-bottom:15px;" data-bind="invisible: deleteMode">Qty</strong>
-				<input type="number" data-bind="value: qty, invisible: deleteMode" min="1" max="99" />
-				<span style="background-color:red;" data-role="button" data-click="app.cartView.onRemove" data-bind="visible: deleteMode" data-icon="trash"></span>
+				<strong style="display:block; text-align:center; margin-bottom:15px;" data-bind="invisible: deleteMode">Qty</strong>
+				<input style="font-size:14px; min-width:4.00em; width:100%; border:1px solid Gray60;  position:relative;" 
+                        type="number" data-bind="value: qty, invisible: deleteMode" min="1" max="99" />
+				<span style="background-color:red;" data-role="button" 
+                        data-click="app.cartView.onRemove" data-bind="visible: deleteMode" data-icon="trash"></span>
 			</div>
 		    <!--img class="serviceItem-art" /-->
 			<h1 style="margin: 0; font-size: 16px; margin-left: 10px;" data-bind="text: serviceItem.serviceItemDescription"></h1>
@@ -42,4 +44,5 @@
 			</div>
 		</div>
 	</script>
+
 
