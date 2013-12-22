@@ -11,13 +11,18 @@
         app.utils.showError(error);
     };
     window.onerror = _onError;
+
+    console.log("Calling sqlite.init");
+    sqlite.init(); // initialize the database
     
+    console.log("Initialize application");
     app.application = new kendo.mobile.Application(document.body, { layout: "tabstrip-layout",
                                                                     transition: "fade",
                                                                     // initial: "hairServices-view",
                                                                  loading: '<h1 class="loading-message">Loading...</h1>'      
                                                                 } );
     app.utils.init(app.application);
+
     
     app.cart.items.bind("change", function () { app.utils.updateCartBadges($, app.cart); });
      

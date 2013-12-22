@@ -6,6 +6,7 @@
         hairMenuDataSource: null,
 
         init: function () {
+            console.log("hairMenuViewModel.init");
             var that = this,
                 dataSource,
                 dataSourceNails,

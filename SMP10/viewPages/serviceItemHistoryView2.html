@@ -1,0 +1,27 @@
+
+    <div id="tabstrip-serviceHist2"         
+        data-role="view"     
+        data-title="Service History"         
+        data-show="getServiceHist">
+        
+        <header data-role="header">
+            <div data-role="navbar">
+                <a class="nav-button" data-align="left" data-role="backbutton" >Back</a>
+                <span data-role="view-title"></span>
+                 <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+            </div>
+        </header>        
+
+        <ul id="serviceHist-list2">
+        </ul>
+    </div>
+
+
+
+    <!--  kendo template for serviceHist list) -->
+    <script type="text/x-kendo-template" id="serviceHist-list2-template">
+	    <div style="font-size:12px;float:left; margin-right:.8em; vertical-align:middle; padding-bottom:.45em;"  >${serviceItemDescription}</div> 
+        <span style ="font-size:12px;float:right; margin-right: .1em; vertical-align:middle;" >Qty: ${serviceItemQty}</span>
+        
+    </script>
+    

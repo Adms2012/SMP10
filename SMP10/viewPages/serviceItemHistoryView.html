@@ -1,0 +1,32 @@
+
+    <div id="tabstrip-serviceHist"         
+        data-role="view"     
+        data-reload="true"
+        data-title="Service History"         
+        data-model="app.serviceItemHist.viewModel">
+        
+        <header data-role="header">
+            <div data-role="navbar">
+                <a class="nav-button" data-align="left" data-role="backbutton" >Back</a>
+                <span data-role="view-title"></span>
+                 <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+            </div>
+        </header>        
+
+
+        <a id="serviceItemHistRefresh" data-click="serviceItemHistRefreshClick" data-role="button" style="display: block; margin: 2em; text-align: center;">Refresh</a>
+        <ul id="serviceHist-list"
+            data-role="listview"
+            data-bind="source: serviceItemDataSource"
+            data-template="serviceHist-list-template"
+            data-style="inset">
+        </ul>
+    </div>
+
+
+
+    <!--  kendo template for serviceHist list) -->
+    <script type="text/x-kendo-template" id="serviceHist-list-template">
+		<h2 style="margin: 0; font-size: 12px; margin-left: 14px; font-weight: normal;" data-bind="text: serviceItemDescription"></h2> 
+    </script>
+    
