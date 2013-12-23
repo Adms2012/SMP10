@@ -52,3 +52,14 @@ function getServiceHist() {
     console.log("Exit getServiceHist");
 }
 
+function insertCartItemsToDB() {
+    var serviceItems = app.cart.items.data();
+    for (var i = 0; i < serviceItems.length; i++) {
+        var cartEntry = serviceItems[i];
+        //totalPrice += cartEntry.get("qty") * cartEntry.get("serviceItem.serviceItemUnitPrice");
+        sqlite.insertRecord(cartEntry.get("serviceItem.serviceItemDescription"),  cartEntry.get("qty")  );
+    }
+        
+}
+    
+
