@@ -4,7 +4,7 @@
         app = global.app = global.app || {};    
     
     var _scrollToTopIfTooFewItemsInCart = function () {
-        alert('_scrollToTopIfTooFewItemsInCart');
+        //alert('_scrollToTopIfTooFewItemsInCart');
         if(_view.scrollerContent.height() < _view.scroller.element.height()) {
             app.utils.scrollViewToTop(_view.element);
         }
@@ -29,7 +29,7 @@
         },
 
         onToggleDeleteMode = function (evt) {
-            alert('onToggleDeleteMode');
+            //alert('onToggleDeleteMode');
             var element = evt.sender.element;
             var li = element.parents("li");
             var uid = li.data("uid");
