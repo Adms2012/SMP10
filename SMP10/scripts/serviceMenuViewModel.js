@@ -1,20 +1,20 @@
 (function (global) {
-    var hairMenuViewModel,
+    var serviceMenuViewModel,
         app = global.app = global.app || {};
 
-    hairMenuViewModel = kendo.data.ObservableObject.extend({
+    serviceMenuViewModel = kendo.data.ObservableObject.extend({
         hairMenuDataSource: null,
 
         init: function () {
-            console.log("hairMenuViewModel.init");
+            console.log("serviceMenuViewModel.init");
             var that = this,
-                dataSource,
+                dataSourceHair,
                 dataSourceNails,
                 dataSourceFacial;
 
             kendo.data.ObservableObject.fn.init.apply(that, []);
 
-            dataSource = new kendo.data.DataSource({
+            dataSourceHair = new kendo.data.DataSource({
                 transport: {
                     read: {
                         url: "data/hairMenu.json",
@@ -22,7 +22,7 @@
                     }
                 }
             });
-            that.set("hairMenuDataSource", dataSource);
+            that.set("hairMenuDataSource", dataSourceHair);
 
             dataSourceNails = new kendo.data.DataSource({
                 transport: {
@@ -71,8 +71,8 @@
     
 
    
-    app.hairMenu = {
-        viewModel: new hairMenuViewModel()
+    app.serviceMenu = {
+        viewModel: new serviceMenuViewModel()
     };
     
 })(window);
