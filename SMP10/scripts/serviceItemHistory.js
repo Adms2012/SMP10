@@ -59,7 +59,9 @@ function insertCartItemsToDB() {
         //totalPrice += cartEntry.get("qty") * cartEntry.get("serviceItem.serviceItemUnitPrice");
         sqlite.insertRecord(cartEntry.get("serviceItem.serviceItemDescription"),  cartEntry.get("qty")  );
     }
-        
+    // Clear the cart
+    app.cart.clear();  
+    app.utils.navigate("index.html");
 }
     
 

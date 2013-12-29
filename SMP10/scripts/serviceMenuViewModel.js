@@ -4,6 +4,8 @@
 
     serviceMenuViewModel = kendo.data.ObservableObject.extend({
         hairMenuDataSource: null,
+        nailsMenuDataSource: null,
+        facialMenuDataSource: null,
 
         init: function () {
             console.log("serviceMenuViewModel.init");

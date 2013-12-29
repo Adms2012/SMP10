@@ -20,6 +20,7 @@
     cartItems = new kendo.data.DataSource({
             data: [],
             change: function () {
+                console.log("Enter cartItems.change");
                 var totalPrice = 0;
                 var totalCount = 0;
                 var serviceItems = cartItems.data();
@@ -30,6 +31,7 @@
                 }
                 cartAggregates.set("totalAmt", totalPrice);
                 cartAggregates.set("totalQty", totalCount);
+                console.log("Exit cartItems.change qty=" + totalCount);
             },
             schema: {
                 model: {
@@ -44,12 +46,15 @@
         }),
 
         findserviceItem = function (serviceItemId) {
+            console.log("Enter cartItems.findserviceItem " + serviceItemId);
             var data = cartItems.data();
             for(var i = 0; i < data.length; i++) {
                 if(data[i].serviceItem.serviceItemId === serviceItemId) {
+                    console.log("Exit cartItems.findserviceItem -- found");
                     return data[i];
                 }
             }
+            console.log("Exit cartItems.findserviceItem -- NOT found");
             return undefined;
         },
 
@@ -63,11 +68,14 @@
             }
         },
 
-        clear = function () {
-            alert('clear');
+        clearCart = function () {
+            console.log('clear cartItems');
             for(var i = cartItems.data().length - 1; i >= 0; i--) {
                 cartItems.remove(cartItems.data()[i]);
             }
+            cartItems.data().length = 0;
+            cartItems.data = [];
+            console.log('exit clear cartItems');
         };
 
     app.cart = {
@@ -75,6 +83,6 @@
         add: addserviceItem,
         find: findserviceItem,
         aggregates: cartAggregates,
-        clear: clear
+        clear: clearCart
     };
 })(window);    
