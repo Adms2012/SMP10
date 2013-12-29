@@ -5,9 +5,15 @@
         app = global.app = global.app || {};    
     
     cartAggregates = kendo.observable({
-        total: 0,
+        totalAmt: 0,
+        totalQty: 0,
         formattedTotal: function () {
-            return kendo.toString(this.get("total"), "c");
+            return kendo.toString(this.get("totalAmt"), "c");
+        },
+        formattedTotalWithQty: function () {
+            var msg;
+            msg = kendo.toString(this.get("totalQty")) + " @ " + kendo.toString(this.get("totalAmt"), "c");
+            return msg;
         }
     });
     
@@ -15,12 +21,15 @@
             data: [],
             change: function () {
                 var totalPrice = 0;
+                var totalCount = 0;
                 var serviceItems = cartItems.data();
                 for (var i = 0; i < serviceItems.length; i++) {
                     var cartEntry = serviceItems[i];
                     totalPrice += cartEntry.get("qty") * cartEntry.get("serviceItem.serviceItemUnitPrice");
+                    totalCount += cartEntry.get("qty");
                 }
-                cartAggregates.set("total", totalPrice);
+                cartAggregates.set("totalAmt", totalPrice);
+                cartAggregates.set("totalQty", totalCount);
             },
             schema: {
                 model: {
