@@ -56,9 +56,13 @@
 
             // force refresh of data bindings.
             var aid = serviceItem.get("serviceItemId");
-            //alert(aid);
+            console.log("Adding item #", aid);
+            
             serviceItem.set("serviceItemId", -1);
             serviceItem.set("serviceItemId", aid);
+            var qty = serviceItem.get("serviceItemCartQty");
+            qty++;
+            serviceItem.set("serviceItemCartQty", qty);
         },
         qtyInCart: function (serviceItem) {
             var cartItem = app.cart.find(serviceItem.get("serviceItemId"));

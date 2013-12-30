@@ -28,6 +28,14 @@
                     var cartEntry = serviceItems[i];
                     totalPrice += cartEntry.get("qty") * cartEntry.get("serviceItem.serviceItemUnitPrice");
                     totalCount += cartEntry.get("qty");
+                    
+                    var serviceItem = cartEntry.get("serviceItem");
+                    console.log(" before updating serviceItemID #" + serviceItem.serviceItemId + "  serviceItemCartQty = " + serviceItem.serviceItemCartQty);
+                    //console.log("  serviceItemCartQty before = " + serviceItem.serviceItemCartQty);
+                    serviceItem.set("serviceItemCartQty", cartEntry.get("qty") );
+                    //console.log("  serviceItemCartQty after = " + serviceItem.serviceItemCartQty);
+                    console.log(" after updating serviceItemID #" + serviceItem.serviceItemId + "  serviceItemCartQty = " + serviceItem.serviceItemCartQty);
+                                
                 }
                 cartAggregates.set("totalAmt", totalPrice);
                 cartAggregates.set("totalQty", totalCount);
@@ -66,6 +74,7 @@
             } else {
                 cartItems.add({ serviceItem: $.extend(true, {}, serviceItem), qty: 1, deleteMode: false });
             }
+
         },
 
         clearCart = function () {

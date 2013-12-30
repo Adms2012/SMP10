@@ -4,6 +4,7 @@
 <!--hairMenu-->
     <div id="tabstrip-hair"         
         data-role="view"    
+        data-before-show ="beforeViewShow"
         data-title="Hair Menu"         
         data-model="app.serviceMenu.viewModel">
         
@@ -32,9 +33,20 @@
             <span class="km-icon km-cart"></span>
 		</div>
         <h1 style="margin: 0; font-size: 16px; margin-left: 10px;" data-bind="text: serviceItemDescription"></h1>
-		<h2 style="margin: 0; font-size: 12px; margin-left: 14px; font-weight: normal;" data-bind="text: serviceItemNotes"></h2> 
+		<h2 style="margin: 0; font-size: 12px; margin-left: 14px; font-weight: normal;" data-bind="text: serviceItemCartQty"></h2> 
         <div style="float:right; margin-right:1.0em; vertical-align:middle; padding-bottom:.45em;"  data-bind="text: serviceItemPriceFormatted "></div>        
         <!-- div style="float:right; margin-right:0.2em; vertical-align:middle; padding-bottom:.45em;">$    </div-->
 	</script>
 
+
+<script>
+     function beforeViewShow(){
+      console.log("Enter beforeViewShow");
+      console.log("Exit  beforeViewShow");
+    };
+     function mhRefresh(){
+      console.log("Enter mhRefresh");
+      console.log("Exit  mhRefresh");
+    };
     
+</script>    
