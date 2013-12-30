@@ -9,6 +9,7 @@
     "serviceItemDescription": "Man Haircut",
     "serviceItemUnitPrice":        12,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": ""
     },
     {
@@ -21,6 +22,7 @@
     "serviceItemDescription": "Woman Haircut",
     "serviceItemUnitPrice":        15,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -33,6 +35,7 @@
     "serviceItemDescription": "* Blowdry extra",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": ""
     },
     {
@@ -45,6 +48,7 @@
     "serviceItemDescription": "Children haircut",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -57,6 +61,7 @@
     "serviceItemDescription": "Bang",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": ""
     },
     {
@@ -69,6 +74,7 @@
     "serviceItemDescription": "Shampoo Set",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -81,6 +87,7 @@
     "serviceItemDescription": "Style",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -93,6 +100,7 @@
     "serviceItemDescription": "Up-do",
     "serviceItemUnitPrice":        "35",
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
      {
@@ -105,6 +113,7 @@
     "serviceItemDescription": "Perm",
     "serviceItemUnitPrice":        "35",
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": ""
     },
     {
@@ -117,6 +126,7 @@
     "serviceItemDescription": "Color",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -129,6 +139,7 @@
     "serviceItemDescription": "Full Weave",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -141,6 +152,7 @@
     "serviceItemDescription": "Partial Weave",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": ""
     },
     {
@@ -153,6 +165,7 @@
     "serviceItemDescription": "Deep Conditioner",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -165,6 +178,7 @@
     "serviceItemDescription": "Japanese Straightening",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -177,6 +191,7 @@
     "serviceItemDescription": "Brazillian Blowout",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     },
     {
@@ -189,6 +204,7 @@
     "serviceItemDescription": "Hair Extensions",
     "serviceItemUnitPrice":        10,
     "serviceItemLengthInMinutes": 30,
+    "serviceItemCartQty": 0,
     "serviceItemNotes": "and up"
     }
   ]
