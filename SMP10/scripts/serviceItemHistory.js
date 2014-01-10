@@ -57,11 +57,30 @@ function insertCartItemsToDB() {
     for (var i = 0; i < serviceItems.length; i++) {
         var cartEntry = serviceItems[i];
         //totalPrice += cartEntry.get("qty") * cartEntry.get("serviceItem.serviceItemUnitPrice");
-        sqlite.insertRecord(cartEntry.get("serviceItem.serviceItemDescription"),  cartEntry.get("qty")  );
+        sqlite.insertServiceItemHistoryRecord(cartEntry.get("serviceItem.serviceItemDescription"),  cartEntry.get("qty")  );
     }
     // Clear the cart
     app.cart.clear();  
     app.utils.navigate("index.html");
 }
     
-
+function getHairMenu() {
+	var render3 = function (tx, rs) {
+        console.log("  Enter getHairMenu.render3");
+		var d = $.parseJSON(convertRStoJSON(rs));
+        console.log(d);
+		$("#hairMenu-list").kendoMobileListView({
+			dataSource: d,
+			template: $("#hairMenu-list-template").html(),
+            style: "inset"
+		});
+        console.log("  Exit getHairMenu.render3");
+	}
+    
+    console.log("Enter getHairMenu");
+	if (sqlite.db) {
+        console.log("  calling selectHairMenu");
+		sqlite.selectHairMenu(render3);
+	}
+    console.log("Exit getHairMenu");
+}
