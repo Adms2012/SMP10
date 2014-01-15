@@ -3,7 +3,7 @@
     var app = global.app = global.app || {};
 
     var _kendoApp;
-
+    
     app.utils = {
         init: function (kendoApp) {
             _kendoApp = kendoApp;

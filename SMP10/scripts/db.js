@@ -641,7 +641,8 @@ var sqlite = function () {
             sqlStatement = sqlStatement +  " serviceItemTimeStamp TEXT)  	";			
             tx.executeSql(sqlStatement  , []);
             
-
+            //alert("1b");
+            
 			console.log("check to see if we already have records in the tb_serviceItem table - it not, populate with default values");
 			tx.executeSql("SELECT * FROM tb_serviceItem", [],
 						  checkServiceItemCount,
@@ -657,14 +658,17 @@ var sqlite = function () {
 
 	var checkServiceItemCount = function (tx, rs) {
 		var self = this;
-        
-		if (rs.rows.length == 0) {
+        if (rs.rows.length == 0) {
+			$.each(menuData.hairMenu, function(index, data) {
+				self.sqlite.insertServiceMenuRecord( data.userID, data.serviceID, data.serviceCategory, data.serviceName, data.serviceDescription, data.serviceItemId, data.serviceItemDescription, data.serviceItemUnitPrice, data.serviceItemLengthInMinutes, data.serviceItemCartQty, data.serviceItemNotes );
+			});
+			$.each(menuData.nailsMenu, function(index, data) {
+				self.sqlite.insertServiceMenuRecord( data.userID, data.serviceID, data.serviceCategory, data.serviceName, data.serviceDescription, data.serviceItemId, data.serviceItemDescription, data.serviceItemUnitPrice, data.serviceItemLengthInMinutes, data.serviceItemCartQty, data.serviceItemNotes );
+			});
 			$.each(menuData.facialMenu, function(index, data) {
 				self.sqlite.insertServiceMenuRecord( data.userID, data.serviceID, data.serviceCategory, data.serviceName, data.serviceDescription, data.serviceItemId, data.serviceItemDescription, data.serviceItemUnitPrice, data.serviceItemLengthInMinutes, data.serviceItemCartQty, data.serviceItemNotes );
 			});
 		}
-        
-		///getServiceItemHistory(); // load our home view with our newly inserted list of subreddits
 	}
     
     
@@ -745,9 +749,22 @@ var sqlite = function () {
         console.log("  --> selectHairMenu");
         sqlite.db.transaction(function(tx) {
             //tx.executeSql("SELECT * FROM tb_serviceItemHistory ORDER BY id", [],
-            tx.executeSql("SELECT * FROM tb_serviceItem  ", [],
+            tx.executeSql("SELECT * FROM tb_serviceItem ", [],
                           fn,
 					      logHairMenuError);
+	    });
+    }   
+    
+    var logNailsMenuError = function(tx, e) {
+		console.log("SQLite Error: checkServiceItemHistoryCount " + e);
+	}
+    var selectNailsMenu = function(fn) {
+        console.log("  --> selectNailsMenu");
+        sqlite.db.transaction(function(tx) {
+            //tx.executeSql("SELECT * FROM tb_serviceItemHistory ORDER BY id", [],
+            tx.executeSql("SELECT * FROM tb_serviceItem  ", [],
+                          fn,
+					      logNailsMenuError);
 	    });
     }   
     
@@ -759,6 +776,7 @@ var sqlite = function () {
 		insertServiceItemHistoryRecord: insertServiceItemHistoryRecord,
 		deleteRecord: deleteRecord,
         selectHairMenu: selectHairMenu,
+        selectNailsMenu: selectNailsMenu,
         selectAllServiceItemHistory: selectAllServiceItemHistory
 	}
 }();

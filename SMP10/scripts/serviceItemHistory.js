@@ -69,7 +69,7 @@ function getHairMenu() {
         console.log("  Enter getHairMenu.render3");
 		var d = $.parseJSON(convertRStoJSON(rs));
         console.log(d);
-		$("#hairMenu-list").kendoMobileListView({
+        $("#hairMenu-list").kendoMobileListView({
 			dataSource: d,
 			template: $("#hairMenu-list-template").html(),
             style: "inset"
@@ -84,3 +84,25 @@ function getHairMenu() {
 	}
     console.log("Exit getHairMenu");
 }
+
+function getNailsMenu() {
+	var render3 = function (tx, rs) {
+        console.log("  Enter getNailsMenu.render3");
+		var d = $.parseJSON(convertRStoJSON(rs));
+        console.log(d);
+		$("#nailsMenu-list").kendoMobileListView({
+			dataSource: d,
+			template: $("#nailsMenu-list-template").html(),
+            style: "inset"
+		});
+        console.log("  Exit getNailsMenu.render3");
+	}
+       
+    console.log("Enter getNailsMenu");
+	if (sqlite.db) {
+        console.log("  calling selectNailsMenu");
+		sqlite.selectNailsMenu(render3);
+	}
+    console.log("Exit getHairMenu");
+}
+
