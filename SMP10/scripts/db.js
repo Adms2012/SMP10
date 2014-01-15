@@ -749,7 +749,7 @@ var sqlite = function () {
         console.log("  --> selectHairMenu");
         sqlite.db.transaction(function(tx) {
             //tx.executeSql("SELECT * FROM tb_serviceItemHistory ORDER BY id", [],
-            tx.executeSql("SELECT * FROM tb_serviceItem ", [],
+            tx.executeSql("SELECT * FROM tb_serviceItem WHERE serviceCategory=?", ["Hair"],
                           fn,
 					      logHairMenuError);
 	    });
@@ -762,12 +762,24 @@ var sqlite = function () {
         console.log("  --> selectNailsMenu");
         sqlite.db.transaction(function(tx) {
             //tx.executeSql("SELECT * FROM tb_serviceItemHistory ORDER BY id", [],
-            tx.executeSql("SELECT * FROM tb_serviceItem  ", [],
+            tx.executeSql("SELECT * FROM tb_serviceItem WHERE serviceCategory=?", ["Nails"],
                           fn,
 					      logNailsMenuError);
 	    });
     }   
     
+    var logFacialMenuError = function(tx, e) {
+		console.log("SQLite Error: checkServiceItemHistoryCount " + e);
+	}
+    var selectFacialMenu = function(fn) {
+        console.log("  --> selectNailsMenu");
+        sqlite.db.transaction(function(tx) {
+            //tx.executeSql("SELECT * FROM tb_serviceItemHistory ORDER BY id", [],
+            tx.executeSql("SELECT * FROM tb_serviceItem WHERE serviceCategory=?", ["Facial"],
+                          fn,
+					      logFacialMenuError);
+	    });
+    }   
 	return {
 		init: init,
 		logSuccess: logSuccess,
@@ -777,6 +789,7 @@ var sqlite = function () {
 		deleteRecord: deleteRecord,
         selectHairMenu: selectHairMenu,
         selectNailsMenu: selectNailsMenu,
+        selectFacialMenu: selectFacialMenu,
         selectAllServiceItemHistory: selectAllServiceItemHistory
 	}
 }();

@@ -106,3 +106,23 @@ function getNailsMenu() {
     console.log("Exit getHairMenu");
 }
 
+function getFacialMenu() {
+	var render3 = function (tx, rs) {
+        console.log("  Enter getFacialMenu.render3");
+		var d = $.parseJSON(convertRStoJSON(rs));
+        console.log(d);
+		$("#facialMenu-list").kendoMobileListView({
+			dataSource: d,
+			template: $("#facialMenu-list-template").html(),
+            style: "inset"
+		});
+        console.log("  Exit getFacialMenu.render3");
+	}
+       
+    console.log("Enter getFacialMenu");
+	if (sqlite.db) {
+        console.log("  calling selectFacialMenu");
+		sqlite.selectFacialMenu(render3);
+	}
+    console.log("Exit getFacialMenu");
+}
